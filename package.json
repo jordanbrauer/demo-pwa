@@ -1,7 +1,7 @@
 {
-  "name": "react-pwa-starterkit",
+  "name": "demo-pwa",
   "version": "0.0.1",
-  "description": "A React.js starter kit for kicking off your next PWA (Progressive Web Application).",
+  "description": "A demo progressive web application following Googles tutorial.",
   "main": "src/index.html",
   "scripts": {
     "test": "echo \"No testing framework has been implemented as of yet.\" && exit 1",
