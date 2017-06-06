@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import App from './Components/App.jsx';
 import Styles from '../assets/styles/app.scss';
 
 ReactDOM.render (
@@ -46,15 +46,15 @@ ReactDOM.render (
    *
    ****************************************************************************/
 
-  document.getElementById('butRefresh').addEventListener('click', function() {
-    // Refresh all of the forecasts
-    app.updateForecasts();
-  });
+  // document.getElementById('butRefresh').addEventListener('click', function() {
+  //   // Refresh all of the forecasts
+  //   app.updateForecasts();
+  // });
 
-  document.getElementById('butAdd').addEventListener('click', function() {
-    // Open/show the add new city dialog
-    app.toggleAddDialog(true);
-  });
+  // document.getElementById('butAdd').addEventListener('click', function() {
+  //   // Open/show the add new city dialog
+  //   app.toggleAddDialog(true);
+  // });
 
   document.getElementById('butAddCity').addEventListener('click', function() {
     // Add the newly selected city
@@ -84,13 +84,13 @@ ReactDOM.render (
    ****************************************************************************/
 
   // Toggles the visibility of the add new city dialog.
-  app.toggleAddDialog = function(visible) {
-    if (visible) {
-      app.addDialog.classList.add('dialog-container--visible');
-    } else {
-      app.addDialog.classList.remove('dialog-container--visible');
-    }
-  };
+  // app.toggleAddDialog = function(visible) {
+  //   if (visible) {
+  //     app.addDialog.classList.add('dialog-container--visible');
+  //   } else {
+  //     app.addDialog.classList.remove('dialog-container--visible');
+  //   }
+  // };
 
   // Updates a weather card with the latest weather forecast. If the card
   // doesn't already exist, it's cloned from the template.
@@ -221,13 +221,13 @@ ReactDOM.render (
     request.send();
   };
 
-  // Iterate all of the cards and attempt to get the latest forecast data
-  app.updateForecasts = function() {
-    var keys = Object.keys(app.visibleCards);
-    keys.forEach(function(key) {
-      app.getForecast(key);
-    });
-  };
+  // // Iterate all of the cards and attempt to get the latest forecast data
+  // app.updateForecasts = function() {
+  //   var keys = Object.keys(app.visibleCards);
+  //   keys.forEach(function(key) {
+  //     app.getForecast(key);
+  //   });
+  // };
 
   // TODO add saveSelectedCities function here
   app.saveSelectedCities = function () {

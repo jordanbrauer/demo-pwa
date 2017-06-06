@@ -10,7 +10,8 @@ export default class ButtonAdd extends React.Component {
 
   render () {
     return (
-      <button id="butAdd" className="headerButton" aria-label="Add"></button>
+      <button id="butAdd" className="headerButton" onClick={""} aria-label="Add">
+      </button>
     );
   }
 }

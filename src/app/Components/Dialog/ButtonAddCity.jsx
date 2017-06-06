@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class ButtonRefresh extends React.Component {
+export default class ButtonAddCity extends React.Component {
   constructor (props) {
     super (props);
     this.state = {};
@@ -10,7 +10,7 @@ export default class ButtonRefresh extends React.Component {
 
   render () {
     return (
-      <button id="butRefresh" className="headerButton" aria-label="Refresh"></button>
+      <button id="butAddCity" className="button">Add</button>
     );
   }
 }
